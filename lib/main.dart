@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:notificaciones_app/screens/screens.dart';
 
-void main() => runApp(const MyApp());
+import 'package:notificaciones_app/screens/screens.dart';
+import 'package:notificaciones_app/services/services.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await PushNotificationsService.initializeApp();
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
