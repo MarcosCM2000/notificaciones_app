@@ -1,4 +1,4 @@
-package com.example.notificaciones_app
+package com.marcoscm2000.notificaciones_app
 
 import io.flutter.embedding.android.FlutterActivity
 
